@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<script>
+  var myArray = ['hello', 45, 'Bob', 'what', '23'];
+  var revArray =[];
+  function arrayReverse(inputArray){
+    for(var index = inputArray.length-1;index >= 0 ;index--){
+      revArray.push(inputArray[index]);
+    }
+   return revArray;
+
+}
+
+  var result = arrayReverse(myArray);
+  console.log(result);
+</script>
+<body>
+
+</body>
+</html>

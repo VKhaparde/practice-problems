@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script>
+    var myString = "Hello my name is Stu";
+    var wordArray = [], resArray = [] , strPigLatin='';
+    function convertToPigLatin(str) {
+      //debugger;
+      wordArray = str.split(' ');
+      console.log(wordArray);
+      for (var index = 0; index < wordArray.length; index++) {
+        for (var charIndex = 0; charIndex < wordArray[index].length; charIndex++) {
+          if(wordArray[index][charIndex]==='a'|| wordArray[index][charIndex] === 'e'||wordArray[index][charIndex] === 'i'||
+          wordArray[index][charIndex] === 'o'|| wordArray[index][charIndex] === 'u'){
+            var newWord = wordArray[index].slice(charIndex)+wordArray[index].slice(0,charIndex)+'ay';
+            resArray.push(newWord);
+            break;
+          }
+          else if (charIndex === wordArray[index].length - 1) {
+              var newWord = '';
+              for(var revIndex = charIndex ;revIndex >= 0 ; revIndex--){
+                newWord+= wordArray[index][revIndex];
+              }
+              newWord = newWord+'ay';
+              resArray.push(newWord);
+              break;
+        }
+      }
+
+    }
+    console.log('PigLatin Conversion : ', resArray);
+
+    for(var index2 = 0; index2 < resArray.length;index2++){
+      strPigLatin+= resArray[index2]+' ';
+    }
+    console.log("String converted to piglatin is ",strPigLatin);
+    return strPigLatin;
+  }
+
+    convertToPigLatin(myString);
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

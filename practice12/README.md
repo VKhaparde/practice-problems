@@ -9,11 +9,9 @@ And the resulting output:
 Another sample:
 - math_sequence(5);
 
-Resulting output: 
+Resulting output:
 - [10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42];
 
-Create a function definition that achieves the output with the given input. 
+Create a function definition that achieves the output with the given input.
 
 <a href="https://jsbin.com/hirunic/edit?js,console" target="_blank">Solution Set</a>
-
-

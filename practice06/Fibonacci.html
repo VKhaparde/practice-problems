@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<script>
+  var fibArray = [];
+  fibArray[0] =0;
+  fibArray[1]=1;
+
+  function fibSequence(n){
+    for(var i =2;i<n;i++){
+      fibArray[i] = fibArray[i-1]+fibArray[i-2];
+
+    }
+  return fibArray;
+  }
+  var result = fibSequence(12);
+  console.log(result);
+</script>
+<body>
+
+</body>
+</html>

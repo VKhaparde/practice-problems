@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<script>
+function fizzBuzz(){
+  var numArray=[],threeFiveArray =[];
+  for(var index=0; index < 100 ; index++ ){
+    numArray.push(index+1);
+  }
+  console.log(numArray);
+  for (var index = 0; index < 100; index++) {
+     if (numArray[index] % 3 === 0 && numArray[index] % 5 === 0) {
+        numArray[index] = "FizzBuzz";
+    }
+   if(numArray[index]%3 === 0){
+      numArray[index] = "Fizz";
+    }
+   if(numArray[index]%5 === 0){
+      numArray[index] = "Buzz";
+    }
+  }
+  console.log(numArray);
+}
+fizzBuzz();
+</script>
+<body>
+
+</body>
+</html>

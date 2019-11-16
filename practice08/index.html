@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .test{
+    height :100px;
+    width : 400px;
+    background-color: blueviolet;
+    color :brown;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+  <script>
+  var str = 'the cat in the hat';
+  var asciiStr = '';
+  function characterConvert(inputStr){
+    for(var index = 0 ; index < inputStr.length ; index++){
+      asciiStr+=inputStr.charCodeAt(index);
+    }
+    return asciiStr;
+  }
+  result = characterConvert(str);
+  console.log(result);
+  $('.test').text(result);
+
+
+  </script>
+</head>
+<body>
+<div class="test">Hello I am gonna change now!!</div>
+</body>
+</html>

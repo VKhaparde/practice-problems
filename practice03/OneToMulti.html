@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<script>
+  var myArray = ['hello', 34, true, false, 'goodbye', 56, 12, '25', true];
+  var resArray =[[],[],[]],intArray =[],strArray =[];booleanArray=[];
+  function groupArray(myArray){
+   for(var index =0;index < myArray.length ;index++) {
+    if(typeof myArray[index] == 'string'){
+      // strArray.push(myArray[index]);
+      resArray[0].push(myArray[index]);
+    }
+    if (typeof myArray[index] == 'number') {
+      //  intArray.push(myArray[index]);
+      resArray[1].push(myArray[index]);
+     }
+     if (typeof myArray[index] == 'boolean') {
+      //  booleanArray.push(myArray[index]);
+      resArray[2].push(myArray[index]);
+     }
+   }
+  //  resArray[0] = strArray;
+  //  resArray[1] = intArray;
+  //  resArray[2] = booleanArray;
+  console.log(resArray);
+  }
+   groupArray(myArray);
+</script>
+<body>
+
+</body>
+</html>

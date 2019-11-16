@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+//   Given the following function call:
+// - numeric_toggles(2);
+
+//     And the resulting output:
+//     -[4, 6, -9, -12, 16, 20, -25, -30];
+  numeric_toggles(2);
+
+  function numeric_toggles(num){
+    var resArray = [];
+    for(var index =num ; index < num+4; index++ ){
+      for(var mult = index ; mult < index +2 ; mult++){
+      var result = index * mult;
+      if(index%2){
+        result = parseInt('-' + result);
+      }
+      resArray.push(result);
+      }
+    }
+    console.log(resArray);
+  }
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

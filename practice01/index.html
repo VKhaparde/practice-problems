@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    var resArray = [];
+    var myArray = ['bug', 'insect', 'mammal', 'reptile', 'mammoth', 'turtles'];
+    //debugger;
+  function biggerWords(str, inputarray){
+    for(var index=0; index < inputarray.length; index++){
+      if(inputarray[index].length > str.length){
+        resArray.push(inputarray[index]);
+      }
+    }
+    console.log(resArray);
+  }
+  	biggerWords('whales', myArray);
+  </script>
+</head>
+<body>
+
+</body>
+</html>

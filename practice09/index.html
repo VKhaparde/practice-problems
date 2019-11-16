@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var wordArray = ['cat', 'caterpillar', 'whale', 'accurate', 'smile', 'cactus', 'cute'];
+    var fittingWord = 'cat';
+    var fittingWordLength = fittingWord.length;
+    var count = 0 , finalCount ;
+    var resArray = [];
+    function returningFittingWordString(fittingWord, wordArray) {
+     //debugger;
+      for (var index = 0; index < wordArray.length; index++) {
+        for (var fwIndex = 0; fwIndex < fittingWord.length; fwIndex++) {
+
+          if (wordArray[index].includes(fittingWord[fwIndex])) {
+            count++;
+          }
+        }
+        finalCount = count;
+        count = 0;
+        console.log('FinalCount : ', finalCount);
+        if (finalCount >= fittingWordLength) {
+          resArray.push(wordArray[index]);
+
+        }
+      }
+      return resArray;
+
+    }
+result = returningFittingWordString(fittingWord,wordArray);
+console.log(result);
+  </script>
+</body>
+
+</html>

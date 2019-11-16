@@ -5,11 +5,11 @@ var testVals = [{
   `,
   testVals: {
     inputs: [
-        ['var/www/html'], 
+        ['var/www/html'],
         ['stuff/thing/stuff/howdy'],
-      
+
     ],
-    outputs:    
+    outputs:
     [  ['var','www','html'],
        ['stuff','thing','stuff','howdy'],
     ]
@@ -28,7 +28,7 @@ var testVals = [{
     `,
   testVals: {
     inputs: [
-        ['http://learningfuze.com:80/part-time/details/index.html'], 
+        ['http://learningfuze.com:80/part-time/details/index.html'],
         ['https://google.com:443/account/content.asp'],
     ],
     outputs: [
@@ -49,8 +49,8 @@ var testVals = [{
   },
   functionToTest: 'getPathParts'
 }, {
-  question: `getCapitalCount: given an array of words, 
-  return a count of how many start with capital letters, 
+  question: `getCapitalCount: given an array of words,
+  return a count of how many start with capital letters,
   For example: ['it','will','not','Be','long','Till','we','Are']
   returns: 3`,
   testVals: {
@@ -94,7 +94,7 @@ var testVals = [{
       [
         { num1: 12, num2: 4, op: '-', result: 8},
         { num1: 2, num2: 3, op: '+', result: 5}
-      ], 
+      ],
       [
         { num1: 2, num2: 1, op: '+', result: 3},
         { num1: -3, num2: -1, op: '+', result: -4}
@@ -103,4 +103,3 @@ var testVals = [{
   },
   functionToTest: 'correctCalcChecker'
 }]
-

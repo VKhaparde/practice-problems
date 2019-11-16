@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+//   Given the following function call:
+// - factor_of_sequence(2);
+
+//     And the resulting output:
+//     -[0, 3, 0, 0, 6, 0, 0, 9, 0, 0, 12];
+
+var resArray = [];
+function factor_of_sequence(num){
+  debugger;
+  for (var index = num; index < num + 11 ; index ++  ){
+    if(!(index%3)){
+      resArray.push(index);
+    }
+    else{
+      resArray.push(0);
+    }
+
+
+  }
+  return resArray;
+}
+  console.log(factor_of_sequence(2));
+  </script>
+</head>
+<body>
+
+</body>
+</html>

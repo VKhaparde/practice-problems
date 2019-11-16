@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+  // - Write a function that takes one parameter
+  //     - Parameter 1 - an array of numbers
+  //       - The function should return an object with multiple arrays in it, one for each non - repeating number in the input array
+  //         - repeated numbers should not be added twice
+  //           - Example:
+  //   - `arrayFactors([4,2,8,6,3,9]);`
+  //     - Output - {
+  //       4: [2],
+  //       2: [],
+  //       8: [4, 2],
+  //       6: [2, 3],
+  //       3: [],
+  //       9: [3]
+  //     }
+  console.log(arrayFactors([4, 2, 8, 6, 3, 9]));
+    function arrayFactors(array){
+
+      var resObj= {};
+      var resArray =[];
+      var current;
+      for(var index =0; index < array.length ; index++){
+         current = array.shift();
+        var newArray = array;
+        for(var index2=0;index2 < newArray.length ;index2++){
+          if(current%newArray[index2]===0){
+              resArray.push(newArray[index2]);
+          }
+        }
+        resObj[current] = resArray;
+        resArray = [];
+        newArray.push(current);
+        array = newArray;
+        current =null;
+      }
+      return resObj;
+    }
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
