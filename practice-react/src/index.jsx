@@ -8,8 +8,8 @@ import App2 from './app2';
 // const numbers = [1, 2, 3, 4, 5];
 ReactDOM.render(
   // <ShowList numbers={numbers}/>,
-  // <ExampleForm/>,
+  <ExampleForm/>,
   // <App />,
-  <App2 />,
+  // <App2 />,
   document.querySelector('#root')
 );

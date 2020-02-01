@@ -28,7 +28,7 @@ function matrix_add(array1,array2){
       innerArr.push(sum);
     }
     sumArray.push(innerArr);
-
+    console.log('innerArray',innerArr);
     innerArr = [];
   }
   console.log(sumArray);
